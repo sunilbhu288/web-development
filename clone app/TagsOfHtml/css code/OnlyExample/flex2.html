@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>Flex-Box</title>
+  <style>
+    .container{
+      height:400px;
+      border: 2px solid red;
+      display: flex;
+      
+      /* flex-direction: column; */
+      /* flex-direction: row;
+      flex-flow: wrap; */
+      /* justify-content: space-around; */
+      flex-flow: wrap row;
+    }
+    .box{
+      border:2px solid blue;
+      margin: 10px;
+      width: 100px;
+      /* height: 100px; */
+      /* the mean of margin 10px is gap around all side.. */
+      /* if we write margin: 10px 20px that means that gap 10px from x- axis and 20px from y-axis */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">10</div>
+  </div>
+</body>

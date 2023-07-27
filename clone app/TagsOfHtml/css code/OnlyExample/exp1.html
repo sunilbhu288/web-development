@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>document object module</title>
+  </head>
+  <body>
+    <div class="name">Ram</div>
+    <div class="name">Shyam</div>
+    <div class="name">Arun</div>
+  </body>
+  <script>
+      // let ans = document.querySelectorAll(".name");
+      // for(let i=0;i<ans.length;i++){
+      //   console.log(ans[i].innerHTML);
+      // }
+      let result = document.getElementsByClassName("name");
+      result[1].innerHTML="vijay";
+      for(let i=0;i<result.length;i++){
+        console.log(result[i]);
+      }
+  </script>
+</html>

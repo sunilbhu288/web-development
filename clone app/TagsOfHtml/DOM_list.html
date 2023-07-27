@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add element in List</title>
+  </head>
+  <head>
+    <ul id="box">
+      <li>Ram</li>
+      <li>Shyam</li>
+      <li>Lakshman</li>
+    </ul>
+    <script>
+      let liBox = document.getElementById("box");
+      let newLi = document.createElement("li");
+      let newLiText = document.createTextNode("Bharat");
+      newLi.appendChild(newLiText);
+      liBox.appendChild(newLi);
+    </script>
+  </head>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h1 id="heading">Only heading without long content</h1>
+  <p>This is my first paragaraph to check the condition of innerHTML condition</p> -->
+  <div class="container"></div>
+   <button id="btn">Clicked Here</button>
+</body>
+<script>
+  // function show(){
+    // for(var i=1;i<=100;i++){
+    //   const x = document.createElement("button");
+    //   x.innerText=i;
+    //   const y = document.querySelector("body");
+    //   y.appendChild(x);
+    //   console.log(y);
+    // }
+  // }
+  // show();
+  // const head1 = document.getElementById("heading").innerText="This is heading of paragraph";
+
+
+  // if we want to print the button anymore after clicking without any restiction 
+  // function printButton(){
+  //   const buttonId = document.getElementById("btn");
+  //   let i = 1;
+  //   buttonId.addEventListener("click",function(){
+  //     const createButton = document.createElement("button");
+  //     createButton.innerText=i;
+  //     i++;
+  //     const showResult = document.querySelector("body");
+  //     showResult.appendChild(createButton);
+  //   })
+  // }
+  // printButton();
+
+  
+
+  // Question:  write the paragraph after clicking the button.....
+  const printOnly = document.getElementById("btn");
+  printOnly.addEventListener("click",function(){
+    const addParagraph = document.createElement("h1");
+    addParagraph.innerText = "This is the heading of paragraph ofter clicking!..";
+    const result = document.querySelector("body");
+    result.appendChild(addParagraph);
+  })
+
+</script>
+</html>

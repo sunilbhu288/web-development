@@ -1,0 +1,36 @@
+<!-- <!-- addition of two numeric numbers through help of DOM........ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Module</title>
+  </head>
+  <body>
+    <div>
+      NUM1:<input type="text" id="num1">
+      <br>
+      NUM2:<input type="text" id="num2">
+      <br>
+      <input type ="button" onclick="getData()" value="click Me">
+    </div>
+     <div id ="result" > </div>
+    
+    
+    <script>
+      function getData(){
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        let ans = document.getElementById("result")
+        
+        ans.innerText=num1+num2;
+        
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Only Practice</title>
+  </head>
+  <body>
+    <p id="content"></p>
+    <button id ="btn">Clicked Here</button>
+  </body>
+  <script>
+    function documentObjectManipulation(){
+      // const paragraph1 = document.createElement("h1");
+      // paragraph1.style.color="red";
+      // paragraph1.innerText ="This is Heading of paragraph";
+      // const paragraph2 = document.querySelector("#content");
+      // paragraph2.appendChild(paragraph1)
+      // console.log(paragraph2);
+
+      //create button 1 to 100
+      // for(let i=1;i<=100;i++){
+      //   const paragraph1 = document.createElement("button");
+      //   paragraph1.style.color="blue";
+      //   paragraph1.innerText = i;
+      //   const paragraph2 = document.querySelector("#content");
+      //   paragraph2.appendChild(paragraph1);
+      //   console.log(paragraph2);
+      // }
+
+      // use of addEventListener()........
+        var i=1;
+       const eventListener = document.querySelector("#btn");
+       const button1 = document.createElement("button");
+       button1.innerText = i;
+       eventListener.addEventListener("click",function(){
+          // alert("Clicked Button");
+          eventListener.appendChild(button1);
+          
+          console.log(eventListener);
+          i++;
+       })
+      }
+    documentObjectManipulation();
+  </script>
+</html>

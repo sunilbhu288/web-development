@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      /* this is only css style
+      .flex-class{
+        background-color: blueviolet;
+      }
+      .child-class{
+        background-color: brown;
+        margin: 20px;
+        padding: 30px;
+        display: inline-block;
+      } */
+
+      /* Now use the flexboox  */
+      .flex-class{
+        background-color: blue;
+        display: flex;
+        /* here we use row-revese, */
+        flex-direction:column;
+        /* width: 130px; */
+      }
+      .child-class{
+        background-color: brown;
+        padding: 20px;
+        margin: 10px;
+        width: 100px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-class">
+      <div class="child-class">One</div>
+      <div class ="child-class">two</div>
+      <div class ="child-class">three</div>
+      <div class="child-class">four</div>
+    </div>
+  </body>
+</html>

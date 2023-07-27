@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body{
+        min-height: 100vh;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .calculator{
+        width: 300px;
+        height: 500px;
+        box-shadow: 4px 4px 30px rgba(0,0,0,.3);
+        border-radius: 12px;
+        background-color: #22252D;
+        overflow:  hidden;
+      }
+      .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      button{
+        flex: 0 0 22%;
+        margin: 5px 0;
+        border: 1 px solid #000;
+        width: 60px;
+        height: 52px;
+        font-size: 22px;
+        font-weight: 600px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      form input{
+        width: 100%;
+        height: 150px;
+        border: non;
+        border-radius: 12px;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #fff;
+        background-color: rgb(72, 145, 223);
+        text-align: right;
+        
+      }
+      .btn-yellow{
+        background-color: yellow;
+      }
+      .btn-grey{
+        background-color: grey;
+      }
+      .btn-green{
+        background-color: green;
+      }
+      .btn-red{
+        background-color: red;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <section class="calculator">
+      <form>
+        <input type="text" class="screen">
+      </form>
+      <div class="buttons">
+        <button type="button" class="btn btn-yellow" data-num="*">*</button>
+        <button type="button" class="btn btn-yellow" data-num="/">/</button>
+        <button type="button" class="btn btn-yellow" data-num="-">-</button>
+        <button type="button" class="btn btn-yellow" data-num="+">+</button>
+
+        <button type="button" class="btn btn-grey" data-num="9">9</button>
+        <button type="button" class="btn btn-grey" data-num="8">8</button>
+        <button type="button" class="btn btn-grey" data-num="7">7</button>
+        <button type="button" class="btn btn-grey" data-num="6">6</button>
+        <button type="button" class="btn btn-grey" data-num="5">5</button>
+        <button type="button" class="btn btn-grey" data-num="4">4</button>
+        <button type="button" class="btn btn-grey" data-num="3">3</button>
+        <button type="button" class="btn btn-grey" data-num="2">2</button>
+        <button type="button" class="btn btn-grey" data-num="1">1</button>
+        <button type="button" class="btn btn-grey" data-num="0">0</button>
+        <button type="button" class="btn btn-grey" data-num=".">.</button>
+
+        <button type="button" class="btn btn-green" data-num="=">=</button>
+        <button type="button" class="btn btn-red" data-num="C">C</button>
+      </div>
+    </section>
+  </body>
+</html>

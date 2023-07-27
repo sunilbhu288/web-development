@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Manipulation</title>
+  </head>
+  <body>
+    <div id="intro">
+      <h1 style="color:brown ;border:2px solid black;background-color: yellow;">Hello this is paragraph</h1>
+    </div>
+    <script>
+      //const paragraph = document.getElementById("intro");
+      // paragraph.innerHTML="<h1>This is a heading</h1>"
+      //paragraph.innerText="<h1>This is a heading</h1>";
+      const paragraph1 = document.createElement("h3");
+      paragraph1.innerText = "This is a heading of child class";
+      paragraph1.style.color="blue";
+      //const paragraph2 = document.getElementById("intro");
+      const paragraph2 = document.querySelector("#intro");
+      paragraph2.appendChild(paragraph1);
+
+    </script>
+  </body>
+</html>
